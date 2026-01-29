@@ -46,7 +46,7 @@ function toastMessage(message, color = "black", duration = 2000) {
   }).showToast();
 
 
-const api = "http://universities.hipolabs.com/search";
+const api = "https://universities.hipolabs.com/search";
 const elList = document.getElementById("universityList");
 const loading = document.getElementById("loading");
 const notFound = document.getElementById("notFound");
