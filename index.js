@@ -79,10 +79,24 @@ async function fetchUniversities(country) {
     }
      renderUniversities(data);
     } catch (error) {
-    loading.classList.remove("hidden");
-    loading.textContent = "Error loading data ❌";
-    console.error(error);
-  }
+      loading.classList.add("hidden");
+      
+  Toastify({
+    text: "API bilan ulanishda xatolik mavjud ❌",
+    duration: 3500,
+    gravity: "top",
+    position: "center",
+    close: true,
+    style: {
+      background: "linear-gradient(to right, black, black)",
+      color: "red",
+      border: "1px solid red",
+      boxShadow: "0 0 12px rgba(255, 0, 0, 0.6)"
+    }
+  }).showToast();
+
+      console.error(error);
+    }
 }
 
 function renderUniversities(universities) {
