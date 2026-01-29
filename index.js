@@ -53,7 +53,7 @@ const notFound = document.getElementById("notFound");
 const input = document.getElementById("countryInput");
 const btn = document.getElementById("searchBtn");
 
-// fetchUniversities("Uzbekistan");
+fetchUniversities("Uzbekistan");
 
 btn.addEventListener("click", () => {
   const country = input.value.trim();
