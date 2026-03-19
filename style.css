@@ -23,8 +23,8 @@ header {
 }
 
 input {
-  padding: 10px 13px;
-  width: 200px;
+  width: 260px;
+  padding: 10px 15px;
   border-radius: 14px;
   color: red;
   font-size: 17px;
@@ -32,27 +32,37 @@ input {
 }
 
 input:focus {
-    background-color: #000;
+  background-color: #000;
 }
 
 button {
-    width: 100px;
-    height: 40px;
-    border-radius: 15px;
-    padding: 8px 12px;
-    background-color: #000;
-    color: red;
-    border: 2px solid red;
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 8px 12px;
+  background-color: #000;
+  color: red;
+  border: 3px solid red;
+  font-size: 17px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7),
+              0 0 30px rgba(255, 0, 0, 0.5),
+              0 0 45px rgba(255, 0, 0, 0.3);
 }
 
 button:hover {
-    color: yellow;
-    border: 2px solid yellow;
+  color: yellow;
+  border: 3px solid yellow;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.8),
+              0 0 30px rgba(255, 193, 7, 0.6),
+              0 0 45px rgba(255, 193, 7, 0.4);
 }
 
 button:active {
-    color: green;
-    border: 2px solid green;
+  color: green;
+  border: 3px solid green;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.7),
+              0 0 30px rgba(0, 255, 0, 0.5),
+              0 0 45px rgba(0, 255, 0, 0.3);
 }
 
 .list {
@@ -65,11 +75,11 @@ button:active {
 }
 
 .card {
-    width: 300px;
-    background: #252424;
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
+  width: 300px;
+  background: #252424;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .card h3 {
@@ -86,5 +96,5 @@ a {
 }
 
 h1 {
-    color: white;
+  color: white;
 }
